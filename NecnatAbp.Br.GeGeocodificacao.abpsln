@@ -1,0 +1,7 @@
+{
+  "modules": {
+    "NecnatAbp.Br.GeGeocodificacao": {
+      "path": "NecnatAbp.Br.GeGeocodificacao.abpmdl"
+    }
+  }
+}

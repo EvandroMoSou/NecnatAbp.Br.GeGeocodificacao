@@ -1,0 +1,15 @@
+{
+  "extends": "./tsconfig.prod.json",
+  "compilerOptions": {
+    "paths": {
+      "@necnat-abp.Br/ge-geocodificacao": [
+        "projects/ge-geocodificacao/src/public-api.ts"
+      ],
+      "@necnat-abp.Br/ge-geocodificacao/config": [
+        "projects/ge-geocodificacao/config/src/public-api.ts"
+      ],
+      "@proxy": ["projects/ge-geocodificacao/src/lib/proxy/index.ts"],
+      "@proxy/*": ["projects/ge-geocodificacao/src/lib/proxy/*"]
+    }
+  }
+}

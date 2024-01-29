@@ -1,0 +1,111 @@
+{
+  "folders": {
+    "items": {
+      "src": {},
+      "test": {},
+      "host": {}
+    }
+  },
+  "packages": {
+    "NecnatAbp.Br.GeGeocodificacao.Domain.Shared": {
+      "path": "src/NecnatAbp.Br.GeGeocodificacao.Domain.Shared/NecnatAbp.Br.GeGeocodificacao.Domain.Shared.abppkg",
+      "folder": "src"
+    },
+    "NecnatAbp.Br.GeGeocodificacao.Domain": {
+      "path": "src/NecnatAbp.Br.GeGeocodificacao.Domain/NecnatAbp.Br.GeGeocodificacao.Domain.abppkg",
+      "folder": "src"
+    },
+    "NecnatAbp.Br.GeGeocodificacao.Application.Contracts": {
+      "path": "src/NecnatAbp.Br.GeGeocodificacao.Application.Contracts/NecnatAbp.Br.GeGeocodificacao.Application.Contracts.abppkg",
+      "folder": "src"
+    },
+    "NecnatAbp.Br.GeGeocodificacao.Application": {
+      "path": "src/NecnatAbp.Br.GeGeocodificacao.Application/NecnatAbp.Br.GeGeocodificacao.Application.abppkg",
+      "folder": "src"
+    },
+    "NecnatAbp.Br.GeGeocodificacao.EntityFrameworkCore": {
+      "path": "src/NecnatAbp.Br.GeGeocodificacao.EntityFrameworkCore/NecnatAbp.Br.GeGeocodificacao.EntityFrameworkCore.abppkg",
+      "folder": "src"
+    },
+    "NecnatAbp.Br.GeGeocodificacao.MongoDB": {
+      "path": "src/NecnatAbp.Br.GeGeocodificacao.MongoDB/NecnatAbp.Br.GeGeocodificacao.MongoDB.abppkg",
+      "folder": "src"
+    },
+    "NecnatAbp.Br.GeGeocodificacao.HttpApi": {
+      "path": "src/NecnatAbp.Br.GeGeocodificacao.HttpApi/NecnatAbp.Br.GeGeocodificacao.HttpApi.abppkg",
+      "folder": "src"
+    },
+    "NecnatAbp.Br.GeGeocodificacao.HttpApi.Client": {
+      "path": "src/NecnatAbp.Br.GeGeocodificacao.HttpApi.Client/NecnatAbp.Br.GeGeocodificacao.HttpApi.Client.abppkg",
+      "folder": "src"
+    },
+    "NecnatAbp.Br.GeGeocodificacao.TestBase": {
+      "path": "test/NecnatAbp.Br.GeGeocodificacao.TestBase/NecnatAbp.Br.GeGeocodificacao.TestBase.abppkg",
+      "folder": "test"
+    },
+    "NecnatAbp.Br.GeGeocodificacao.EntityFrameworkCore.Tests": {
+      "path": "test/NecnatAbp.Br.GeGeocodificacao.EntityFrameworkCore.Tests/NecnatAbp.Br.GeGeocodificacao.EntityFrameworkCore.Tests.abppkg",
+      "folder": "test"
+    },
+    "NecnatAbp.Br.GeGeocodificacao.MongoDB.Tests": {
+      "path": "test/NecnatAbp.Br.GeGeocodificacao.MongoDB.Tests/NecnatAbp.Br.GeGeocodificacao.MongoDB.Tests.abppkg",
+      "folder": "test"
+    },
+    "NecnatAbp.Br.GeGeocodificacao.Domain.Tests": {
+      "path": "test/NecnatAbp.Br.GeGeocodificacao.Domain.Tests/NecnatAbp.Br.GeGeocodificacao.Domain.Tests.abppkg",
+      "folder": "test"
+    },
+    "NecnatAbp.Br.GeGeocodificacao.Application.Tests": {
+      "path": "test/NecnatAbp.Br.GeGeocodificacao.Application.Tests/NecnatAbp.Br.GeGeocodificacao.Application.Tests.abppkg",
+      "folder": "test"
+    },
+    "NecnatAbp.Br.GeGeocodificacao.HttpApi.Host": {
+      "path": "host/NecnatAbp.Br.GeGeocodificacao.HttpApi.Host/NecnatAbp.Br.GeGeocodificacao.HttpApi.Host.abppkg",
+      "folder": "host"
+    },
+    "NecnatAbp.Br.GeGeocodificacao.Web": {
+      "path": "src/NecnatAbp.Br.GeGeocodificacao.Web/NecnatAbp.Br.GeGeocodificacao.Web.abppkg",
+      "folder": "src"
+    },
+    "NecnatAbp.Br.GeGeocodificacao.HttpApi.Client.ConsoleTestApp": {
+      "path": "test/NecnatAbp.Br.GeGeocodificacao.HttpApi.Client.ConsoleTestApp/NecnatAbp.Br.GeGeocodificacao.HttpApi.Client.ConsoleTestApp.abppkg",
+      "folder": "test"
+    },
+    "NecnatAbp.Br.GeGeocodificacao.Web.Host": {
+      "path": "host/NecnatAbp.Br.GeGeocodificacao.Web.Host/NecnatAbp.Br.GeGeocodificacao.Web.Host.abppkg",
+      "folder": "host"
+    },
+    "NecnatAbp.Br.GeGeocodificacao.AuthServer": {
+      "path": "host/NecnatAbp.Br.GeGeocodificacao.AuthServer/NecnatAbp.Br.GeGeocodificacao.AuthServer.abppkg",
+      "folder": "host"
+    },
+    "NecnatAbp.Br.GeGeocodificacao.Host.Shared": {
+      "path": "host/NecnatAbp.Br.GeGeocodificacao.Host.Shared/NecnatAbp.Br.GeGeocodificacao.Host.Shared.abppkg",
+      "folder": "host"
+    },
+    "NecnatAbp.Br.GeGeocodificacao.Web.Unified": {
+      "path": "host/NecnatAbp.Br.GeGeocodificacao.Web.Unified/NecnatAbp.Br.GeGeocodificacao.Web.Unified.abppkg",
+      "folder": "host"
+    },
+    "NecnatAbp.Br.GeGeocodificacao.Blazor": {
+      "path": "src/NecnatAbp.Br.GeGeocodificacao.Blazor/NecnatAbp.Br.GeGeocodificacao.Blazor.abppkg",
+      "folder": "src"
+    },
+    "NecnatAbp.Br.GeGeocodificacao.Blazor.Host": {
+      "path": "host/NecnatAbp.Br.GeGeocodificacao.Blazor.Host/NecnatAbp.Br.GeGeocodificacao.Blazor.Host.abppkg",
+      "folder": "host"
+    },
+    "NecnatAbp.Br.GeGeocodificacao.Blazor.Server": {
+      "path": "src/NecnatAbp.Br.GeGeocodificacao.Blazor.Server/NecnatAbp.Br.GeGeocodificacao.Blazor.Server.abppkg",
+      "folder": "src"
+    },
+    "NecnatAbp.Br.GeGeocodificacao.Blazor.WebAssembly": {
+      "path": "src/NecnatAbp.Br.GeGeocodificacao.Blazor.WebAssembly/NecnatAbp.Br.GeGeocodificacao.Blazor.WebAssembly.abppkg",
+      "folder": "src"
+    },
+    "NecnatAbp.Br.GeGeocodificacao.Blazor.Server.Host": {
+      "path": "host/NecnatAbp.Br.GeGeocodificacao.Blazor.Server.Host/NecnatAbp.Br.GeGeocodificacao.Blazor.Server.Host.abppkg",
+      "folder": "host"
+    }
+  }
+}

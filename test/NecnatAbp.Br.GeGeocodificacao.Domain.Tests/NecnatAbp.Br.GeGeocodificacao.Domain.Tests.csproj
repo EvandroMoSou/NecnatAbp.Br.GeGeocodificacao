@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <RootNamespace>NecnatAbp.Br.GeGeocodificacao</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.8.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\NecnatAbp.Br.GeGeocodificacao.Domain\NecnatAbp.Br.GeGeocodificacao.Domain.csproj" />
+    <ProjectReference Include="..\NecnatAbp.Br.GeGeocodificacao.TestBase\NecnatAbp.Br.GeGeocodificacao.TestBase.csproj" />
+  </ItemGroup>
+
+
+</Project>
