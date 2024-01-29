@@ -11,6 +11,8 @@ public class GeGeocodificacaoDbContext : AbpDbContext<GeGeocodificacaoDbContext>
      * public DbSet<Question> Questions { get; set; }
      */
 
+    public DbSet<Pais> Pais { get; set; }
+
     public GeGeocodificacaoDbContext(DbContextOptions<GeGeocodificacaoDbContext> options)
         : base(options)
     {

@@ -5,10 +5,25 @@
   <PropertyGroup>
     <TargetFrameworks>netstandard2.0;netstandard2.1;net8.0</TargetFrameworks>
     <Nullable>enable</Nullable>
-    <RootNamespace>NecnatAbp.Br.GeGeocodificacao</RootNamespace>
+    <RootNamespace></RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="NecnatAbp\Br\GeGeocodificacao\DataSeedContributors\IbgeDtb\Date2022\RELATORIO_DTB_BRASIL_DISTRITO.csv" />
+    <None Remove="NecnatAbp\Br\GeGeocodificacao\DataSeedContributors\IbgeDtb\Date2022\RELATORIO_DTB_BRASIL_MUNICIPIO.csv" />
+    <None Remove="NecnatAbp\Br\GeGeocodificacao\DataSeedContributors\IbgeDtb\Date2022\RELATORIO_DTB_BRASIL_SUBDISTRITO.csv" />
+    <None Remove="NecnatAbp\Br\GeGeocodificacao\DataSeedContributors\Iso3166\Date20230921\ISO3166.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="NecnatAbp\Br\GeGeocodificacao\DataSeedContributors\IbgeDtb\Date2022\RELATORIO_DTB_BRASIL_DISTRITO.csv" />
+    <EmbeddedResource Include="NecnatAbp\Br\GeGeocodificacao\DataSeedContributors\IbgeDtb\Date2022\RELATORIO_DTB_BRASIL_MUNICIPIO.csv" />
+    <EmbeddedResource Include="NecnatAbp\Br\GeGeocodificacao\DataSeedContributors\IbgeDtb\Date2022\RELATORIO_DTB_BRASIL_SUBDISTRITO.csv" />
+    <EmbeddedResource Include="NecnatAbp\Br\GeGeocodificacao\DataSeedContributors\Iso3166\Date20230921\ISO3166.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NecnatAbp.Domain" Version="8.0.2-rc001" />
     <PackageReference Include="Volo.Abp.Ddd.Domain" Version="8.0.2" />
     <ProjectReference Include="..\NecnatAbp.Br.GeGeocodificacao.Domain.Shared\NecnatAbp.Br.GeGeocodificacao.Domain.Shared.csproj" />
   </ItemGroup>
