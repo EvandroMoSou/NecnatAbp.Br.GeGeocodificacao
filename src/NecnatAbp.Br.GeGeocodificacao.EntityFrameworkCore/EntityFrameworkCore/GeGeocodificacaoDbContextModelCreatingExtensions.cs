@@ -97,5 +97,39 @@ public static class GeGeocodificacaoDbContextModelCreatingExtensions
             b.HasIndex(x => x.CodigoIbge).IsUnique();
             b.HasIndex(x => new { x.BairroDistritoId, x.Nome }).IsUnique();
         });
+
+        builder.Entity<Logradouro>(b =>
+        {
+            b.ToTable(AbpGeGeocodificacaoDbProperties.DbTablePrefix + "Logradouro",
+                AbpGeGeocodificacaoDbProperties.DbSchema);
+            b.ConfigureByConvention(); //auto configure for the base class props
+            b.Property(x => x.Nome).IsRequired().HasMaxLength(LogradouroConsts.MaxNomeLength);
+            b.Property(x => x.NomeAbreviado).HasMaxLength(LogradouroConsts.MaxNomeAbreviadoLength);
+            b.Property(x => x.Complemento).HasMaxLength(LogradouroConsts.MaxComplementoLength);
+            b.Property(x => x.Ativo).IsRequired();
+            b.Property(x => x.Origem).IsRequired();
+
+            b.HasOne(o => o.CidadeMunicipio).WithMany().HasForeignKey(x => x.CidadeMunicipioId).IsRequired().OnDelete(DeleteBehavior.NoAction);
+            b.HasOne(o => o.BairroDistrito).WithMany().HasForeignKey(x => x.BairroDistritoId).IsRequired().OnDelete(DeleteBehavior.NoAction);
+
+            b.HasIndex(x => x.Cep).IsUnique();
+            b.HasIndex(x => x.Nome);
+            b.HasIndex(x => x.CidadeMunicipioId);
+        });
+
+        builder.Entity<Geolocalizacao>(b =>
+        {
+            b.ToTable(AbpGeGeocodificacaoDbProperties.DbTablePrefix + "Geolocalizacao",
+                AbpGeGeocodificacaoDbProperties.DbSchema);
+            b.ConfigureByConvention(); //auto configure for the base class props
+            b.Property(x => x.Latitude).HasPrecision(10, 8);
+            b.Property(x => x.Longitude).HasPrecision(11, 8);
+            b.Property(x => x.Ativo).IsRequired();
+            b.Property(x => x.Origem).IsRequired();
+
+            b.HasOne(o => o.Logradouro).WithMany().HasForeignKey(x => x.LogradouroId).IsRequired().OnDelete(DeleteBehavior.Cascade);
+
+            b.HasIndex(x => new { x.LogradouroId, x.Numero }).IsUnique();
+        });
     }
 }
