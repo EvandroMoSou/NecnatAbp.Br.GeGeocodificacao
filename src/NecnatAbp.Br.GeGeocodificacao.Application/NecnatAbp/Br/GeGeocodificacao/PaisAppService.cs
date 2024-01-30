@@ -1,4 +1,5 @@
 ﻿using NecnatAbp.AppServices;
+using NecnatAbp.Br.GeGeocodificacao.Permissions;
 using NecnatAbp.Extensions;
 using System;
 using System.Linq;
@@ -20,7 +21,11 @@ namespace NecnatAbp.Br.GeGeocodificacao
     {
         public PaisAppService(IPaisRepository repository) : base(repository)
         {
-
+            GetPolicyName = GeGeocodificacaoPermissions.Pais.Default;
+            GetListPolicyName = GeGeocodificacaoPermissions.Pais.Default;
+            CreatePolicyName = GeGeocodificacaoPermissions.Pais.Create;
+            UpdatePolicyName = GeGeocodificacaoPermissions.Pais.Update;
+            DeletePolicyName = GeGeocodificacaoPermissions.Pais.Delete;
         }
 
         /// <summary>
