@@ -50,5 +50,52 @@ public static class GeGeocodificacaoDbContextModelCreatingExtensions
             b.HasIndex(x => x.CodigoIso3166Numeric).IsUnique();
             b.HasIndex(x => x.Nome).IsUnique();
         });
+
+        builder.Entity<CidadeMunicipio>(b =>
+        {
+            b.ToTable(AbpGeGeocodificacaoDbProperties.DbTablePrefix + "CidadeMunicipio",
+                AbpGeGeocodificacaoDbProperties.DbSchema);
+            b.ConfigureByConvention(); //auto configure for the base class props
+            b.Property(x => x.UnidadeFederativa).IsRequired();
+            b.Property(x => x.Nome).IsRequired().HasMaxLength(CidadeMunicipioConsts.MaxNomeLength);
+            b.Property(x => x.CodigoIbge).HasMaxLength(CidadeMunicipioConsts.MaxCodigoIbgeLength);
+            b.Property(x => x.Ativo).IsRequired();
+            b.Property(x => x.Origem).IsRequired();
+
+            b.HasIndex(x => x.CodigoIbge).IsUnique();
+            b.HasIndex(x => new { x.UnidadeFederativa, x.Nome }).IsUnique();
+        });
+
+        builder.Entity<BairroDistrito>(b =>
+        {
+            b.ToTable(AbpGeGeocodificacaoDbProperties.DbTablePrefix + "BairroDistrito",
+                AbpGeGeocodificacaoDbProperties.DbSchema);
+            b.ConfigureByConvention(); //auto configure for the base class props
+            b.Property(x => x.Nome).IsRequired().HasMaxLength(BairroDistritoConsts.MaxNomeLength);
+            b.Property(x => x.CodigoIbge).HasMaxLength(BairroDistritoConsts.MaxCodigoIbgeLength);
+            b.Property(x => x.Ativo).IsRequired();
+            b.Property(x => x.Origem).IsRequired();
+
+            b.HasOne(o => o.CidadeMunicipio).WithMany().HasForeignKey(x => x.CidadeMunicipioId).IsRequired().OnDelete(DeleteBehavior.Cascade);
+
+            b.HasIndex(x => x.CodigoIbge).IsUnique();
+            b.HasIndex(x => new { x.CidadeMunicipioId, x.Nome }).IsUnique();
+        });
+
+        builder.Entity<Subdistrito>(b =>
+        {
+            b.ToTable(AbpGeGeocodificacaoDbProperties.DbTablePrefix + "Subdistrito",
+                AbpGeGeocodificacaoDbProperties.DbSchema);
+            b.ConfigureByConvention(); //auto configure for the base class props
+            b.Property(x => x.Nome).IsRequired().HasMaxLength(SubdistritoConsts.MaxNomeLength);
+            b.Property(x => x.CodigoIbge).HasMaxLength(SubdistritoConsts.MaxCodigoIbgeLength);
+            b.Property(x => x.Ativo).IsRequired();
+            b.Property(x => x.Origem).IsRequired();
+
+            b.HasOne(o => o.BairroDistrito).WithMany().HasForeignKey(x => x.BairroDistritoId).IsRequired().OnDelete(DeleteBehavior.Cascade);
+
+            b.HasIndex(x => x.CodigoIbge).IsUnique();
+            b.HasIndex(x => new { x.BairroDistritoId, x.Nome }).IsUnique();
+        });
     }
 }

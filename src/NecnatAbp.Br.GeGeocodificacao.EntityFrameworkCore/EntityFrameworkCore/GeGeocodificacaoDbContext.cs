@@ -12,6 +12,9 @@ public class GeGeocodificacaoDbContext : AbpDbContext<GeGeocodificacaoDbContext>
      */
 
     public DbSet<Pais> Pais { get; set; }
+    public DbSet<CidadeMunicipio> CidadeMunicipio { get; set; }
+    public DbSet<BairroDistrito> BairroDistrito { get; set; }
+    public DbSet<Subdistrito> Subdistrito { get; set; }
 
     public GeGeocodificacaoDbContext(DbContextOptions<GeGeocodificacaoDbContext> options)
         : base(options)
