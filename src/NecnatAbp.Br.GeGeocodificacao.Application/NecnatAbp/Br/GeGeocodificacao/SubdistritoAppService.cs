@@ -1,4 +1,5 @@
 ﻿using NecnatAbp.AppServices;
+using NecnatAbp.Br.GeGeocodificacao.Permissions;
 using NecnatAbp.Extensions;
 using System;
 using System.Linq;
@@ -20,6 +21,11 @@ namespace NecnatAbp.Br.GeGeocodificacao
     {
         public SubdistritoAppService(ISubdistritoRepository repository) : base(repository)
         {
+            GetPolicyName = GeGeocodificacaoPermissions.Subdistrito.Default;
+            GetListPolicyName = GeGeocodificacaoPermissions.Subdistrito.Default;
+            CreatePolicyName = GeGeocodificacaoPermissions.Subdistrito.Create;
+            UpdatePolicyName = GeGeocodificacaoPermissions.Subdistrito.Update;
+            DeletePolicyName = GeGeocodificacaoPermissions.Subdistrito.Delete;
         }
 
         protected override async Task<IQueryable<Subdistrito>> CreateFilteredQuerySearchAsync(SubdistritoResultRequestDto input)

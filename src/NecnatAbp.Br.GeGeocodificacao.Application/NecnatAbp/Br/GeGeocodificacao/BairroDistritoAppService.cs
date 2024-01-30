@@ -1,4 +1,5 @@
 ﻿using NecnatAbp.AppServices;
+using NecnatAbp.Br.GeGeocodificacao.Permissions;
 using NecnatAbp.Extensions;
 using System;
 using System.Collections.Generic;
@@ -26,6 +27,12 @@ namespace NecnatAbp.Br.GeGeocodificacao
         {
             TypedRepository = repository;
             SubdistritoRepository = subdistritoRepository;
+
+            GetPolicyName = GeGeocodificacaoPermissions.BairroDistrito.Default;
+            GetListPolicyName = GeGeocodificacaoPermissions.BairroDistrito.Default;
+            CreatePolicyName = GeGeocodificacaoPermissions.BairroDistrito.Create;
+            UpdatePolicyName = GeGeocodificacaoPermissions.BairroDistrito.Update;
+            DeletePolicyName = GeGeocodificacaoPermissions.BairroDistrito.Delete;
         }
 
         /// <summary>

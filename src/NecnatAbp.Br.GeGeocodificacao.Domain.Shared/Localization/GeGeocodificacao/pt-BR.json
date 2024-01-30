@@ -2,6 +2,33 @@
   "culture": "pt-BR",
   "texts": {
     "MyAccount": "Minha conta",
-    "SamplePageMessage": "Uma página de amostra para o módulo GeGeocodificacao"
+    "SamplePageMessage": "Uma página de amostra para o módulo GeGeocodificacao",
+
+    "Permission:Pais:Default": "Visualizar País",
+    "Permission:Pais:Create": "Criar País",
+    "Permission:Pais:Edit": "Editar País",
+    "Permission:Pais:Delete": "Excluir País",
+
+    "Permission:UnidadeFederativa:Default": "Visualizar UnidadeFederativa",
+
+    "Permission:CidadeMunicipio:Default": "Visualizar Cidade / Município",
+    "Permission:CidadeMunicipio:Create": "Criar Cidade / Município",
+    "Permission:CidadeMunicipio:Edit": "Editar Cidade / Município",
+    "Permission:CidadeMunicipio:Delete": "Excluir Cidade / Município",
+
+    "Permission:BairroDistrito:Default": "Visualizar Bairro / Distrito",
+    "Permission:BairroDistrito:Create": "Criar Bairro / Distrito",
+    "Permission:BairroDistrito:Edit": "Editar Bairro / Distrito",
+    "Permission:BairroDistrito:Delete": "Excluir Bairro / Distrito",
+
+    "Permission:Subdistrito:Default": "Visualizar Subdistrito",
+    "Permission:Subdistrito:Create": "Criar Subdistrito",
+    "Permission:Subdistrito:Edit": "Editar Subdistrito",
+    "Permission:Subdistrito:Delete": "Excluir Subdistrito",
+
+    "Permission:Logradouro:Default": "Visualizar Logradouro",
+    "Permission:Logradouro:Create": "Criar Logradouro",
+    "Permission:Logradouro:Edit": "Editar Logradouro",
+    "Permission:Logradouro:Delete": "Excluir Logradouro"
   }
 }

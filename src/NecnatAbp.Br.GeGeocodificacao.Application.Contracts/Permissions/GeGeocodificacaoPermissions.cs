@@ -19,6 +19,38 @@ public class GeGeocodificacaoPermissions
         public const string Default = GroupName + ".UnidadeFederativa";
     }
 
+    public static class CidadeMunicipio
+    {
+        public const string Default = GroupName + ".CidadeMunicipio";
+        public const string Create = Default + ".Create";
+        public const string Update = Default + ".Update";
+        public const string Delete = Default + ".Delete";
+    }
+
+    public static class BairroDistrito
+    {
+        public const string Default = GroupName + ".BairroDistrito";
+        public const string Create = Default + ".Create";
+        public const string Update = Default + ".Update";
+        public const string Delete = Default + ".Delete";
+    }
+
+    public static class Subdistrito
+    {
+        public const string Default = GroupName + ".Subdistrito";
+        public const string Create = Default + ".Create";
+        public const string Update = Default + ".Update";
+        public const string Delete = Default + ".Delete";
+    }
+
+    public static class Logradouro
+    {
+        public const string Default = GroupName + ".Logradouro";
+        public const string Create = Default + ".Create";
+        public const string Update = Default + ".Update";
+        public const string Delete = Default + ".Delete";
+    }
+
     public static string[] GetAll()
     {
         return ReflectionHelper.GetPublicConstantsRecursively(typeof(GeGeocodificacaoPermissions));

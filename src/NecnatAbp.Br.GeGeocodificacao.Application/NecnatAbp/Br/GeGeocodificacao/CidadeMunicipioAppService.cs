@@ -1,4 +1,5 @@
 ﻿using NecnatAbp.AppServices;
+using NecnatAbp.Br.GeGeocodificacao.Permissions;
 using NecnatAbp.Extensions;
 using System;
 using System.Linq;
@@ -20,6 +21,11 @@ namespace NecnatAbp.Br.GeGeocodificacao
     {
         public CidadeMunicipioAppService(ICidadeMunicipioRepository repository) : base(repository)
         {
+            GetPolicyName = GeGeocodificacaoPermissions.CidadeMunicipio.Default;
+            GetListPolicyName = GeGeocodificacaoPermissions.CidadeMunicipio.Default;
+            CreatePolicyName = GeGeocodificacaoPermissions.CidadeMunicipio.Create;
+            UpdatePolicyName = GeGeocodificacaoPermissions.CidadeMunicipio.Update;
+            DeletePolicyName = GeGeocodificacaoPermissions.CidadeMunicipio.Delete;
         }
 
         /// <summary>
