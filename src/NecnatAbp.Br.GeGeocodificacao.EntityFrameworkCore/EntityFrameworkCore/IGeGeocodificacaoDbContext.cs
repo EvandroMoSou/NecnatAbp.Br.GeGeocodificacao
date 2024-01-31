@@ -12,4 +12,9 @@ public interface IGeGeocodificacaoDbContext : IEfCoreDbContext
      */
 
     DbSet<Pais> Pais { get; }
+    DbSet<CidadeMunicipio> CidadeMunicipio { get; }
+    DbSet<BairroDistrito> BairroDistrito { get; set; }
+    DbSet<Subdistrito> Subdistrito { get; set; }
+    DbSet<Logradouro> Logradouro { get; set; }
+    DbSet<Geolocalizacao> Geolocalizacao { get; set; }
 }
