@@ -109,6 +109,7 @@ public static class GeGeocodificacaoDbContextModelCreatingExtensions
             b.Property(x => x.Ativo).IsRequired();
             b.Property(x => x.Origem).IsRequired();
 
+            b.HasOne(o => o.Pais).WithMany().HasForeignKey(x => x.PaisId).IsRequired().OnDelete(DeleteBehavior.NoAction);
             b.HasOne(o => o.CidadeMunicipio).WithMany().HasForeignKey(x => x.CidadeMunicipioId).IsRequired().OnDelete(DeleteBehavior.NoAction);
             b.HasOne(o => o.BairroDistrito).WithMany().HasForeignKey(x => x.BairroDistritoId).IsRequired().OnDelete(DeleteBehavior.NoAction);
 

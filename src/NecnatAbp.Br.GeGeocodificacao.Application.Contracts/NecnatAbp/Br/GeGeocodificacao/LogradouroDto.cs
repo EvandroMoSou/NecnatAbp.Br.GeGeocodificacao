@@ -10,8 +10,12 @@ namespace NecnatAbp.Br.GeGeocodificacao
         public string? NomeAbreviado { get; set; }
         public string? Complemento { get; set; }
         public Guid? BairroDistritoId { get; set; }
+        public BairroDistritoDto? BairroDistrito { get; set; }
         public Guid? CidadeMunicipioId { get; set; }
+        public CidadeMunicipioDto? CidadeMunicipio { get; set; }
         public UnidadeFederativa? UnidadeFederativa { get; set; }
+        public Guid? PaisId { get; set; }
+        public PaisDto? Pais { get; set; }
         public bool? Ativo { get; set; }
     }
 }
