@@ -91,7 +91,7 @@ namespace NecnatAbp.Br.GeGeocodificacao
             return q;
         }
 
-        public async Task<List<LogradouroDto>> SearchFallbackGoogleAsync(FallbackGoogleResultRequestDto input)
+        public async Task<List<LogradouroDto>> SearchFallbackGoogleAsync(LogradouroFallbackResultRequestDto input)
         {
             if (input.GenericSearch == null || input.GenericSearch.Length < 3)
                 throw new UserFriendlyException("O filtro GenericSearch deve conter no mínimo 3 caracteres.");

@@ -14,6 +14,6 @@ namespace NecnatAbp.Br.GeGeocodificacao
             CreateUpdateBairroDistritoDto, //Used to create/update a BairroDistrito
             BairroDistritoResultRequestDto> 
     {
-        Task<List<BairroDistritoDto>> SearchFallbackSubdistritoAsync(FallbackSubdistritoResultRequestDto input);
+        Task<List<BairroDistritoDto>> SearchFallbackSubdistritoAsync(BairroDistritoFallbackResultRequestDto input);
     }
 }

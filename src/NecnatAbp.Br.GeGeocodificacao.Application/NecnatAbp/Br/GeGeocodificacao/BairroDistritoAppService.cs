@@ -78,7 +78,7 @@ namespace NecnatAbp.Br.GeGeocodificacao
             return q;
         }
 
-        public async Task<List<BairroDistritoDto>> SearchFallbackSubdistritoAsync(FallbackSubdistritoResultRequestDto input)
+        public async Task<List<BairroDistritoDto>> SearchFallbackSubdistritoAsync(BairroDistritoFallbackResultRequestDto input)
         {
             if (input.GenericSearch == null || input.GenericSearch.Length < 4)
                 throw new UserFriendlyException("O filtro GenericSearch deve conter no mínimo 4 caracteres.");

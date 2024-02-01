@@ -2,7 +2,7 @@
 
 namespace NecnatAbp.Br.GeGeocodificacao
 {
-    public class FallbackSubdistritoResultRequestDto
+    public class BairroDistritoFallbackResultRequestDto
     {
         public string? GenericSearch { get; set; }
         public Guid? CidadeMunicipioId { get; set; }

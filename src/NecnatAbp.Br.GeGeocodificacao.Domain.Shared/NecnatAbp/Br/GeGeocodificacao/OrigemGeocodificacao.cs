@@ -2,10 +2,11 @@
 {
     public enum OrigemGeocodificacao
     {
-        Interno = 0,
-        Iso3166 = 1,
-        Ibge = 2,
-        Correios = 3,
-        Google = 4,
+        NaoInformado = 0,
+        Sistema = 1,
+        Iso3166 = 2,
+        Ibge = 3,
+        Correios = 4,
+        Google = 5,
     }
 }
