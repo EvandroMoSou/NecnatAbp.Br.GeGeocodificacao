@@ -21,11 +21,11 @@ namespace NecnatAbp.Br.GeGeocodificacao
     {
         public SubdistritoAppService(ISubdistritoRepository repository) : base(repository)
         {
-            GetPolicyName = GeGeocodificacaoPermissions.Subdistrito.Default;
-            GetListPolicyName = GeGeocodificacaoPermissions.Subdistrito.Default;
-            CreatePolicyName = GeGeocodificacaoPermissions.Subdistrito.Create;
-            UpdatePolicyName = GeGeocodificacaoPermissions.Subdistrito.Update;
-            DeletePolicyName = GeGeocodificacaoPermissions.Subdistrito.Delete;
+            GetPolicyName = GeGeocodificacaoPermissions.Subdistritos.Default;
+            GetListPolicyName = GeGeocodificacaoPermissions.Subdistritos.Default;
+            CreatePolicyName = GeGeocodificacaoPermissions.Subdistritos.Create;
+            UpdatePolicyName = GeGeocodificacaoPermissions.Subdistritos.Update;
+            DeletePolicyName = GeGeocodificacaoPermissions.Subdistritos.Delete;
         }
 
         protected override async Task<IQueryable<Subdistrito>> CreateFilteredQuerySearchAsync(SubdistritoResultRequestDto input)

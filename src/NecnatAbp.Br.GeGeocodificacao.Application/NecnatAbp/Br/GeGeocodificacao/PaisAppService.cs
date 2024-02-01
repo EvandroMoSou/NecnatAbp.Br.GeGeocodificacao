@@ -21,11 +21,11 @@ namespace NecnatAbp.Br.GeGeocodificacao
     {
         public PaisAppService(IPaisRepository repository) : base(repository)
         {
-            GetPolicyName = GeGeocodificacaoPermissions.Pais.Default;
-            GetListPolicyName = GeGeocodificacaoPermissions.Pais.Default;
-            CreatePolicyName = GeGeocodificacaoPermissions.Pais.Create;
-            UpdatePolicyName = GeGeocodificacaoPermissions.Pais.Update;
-            DeletePolicyName = GeGeocodificacaoPermissions.Pais.Delete;
+            GetPolicyName = GeGeocodificacaoPermissions.Paises.Default;
+            GetListPolicyName = GeGeocodificacaoPermissions.Paises.Default;
+            CreatePolicyName = GeGeocodificacaoPermissions.Paises.Create;
+            UpdatePolicyName = GeGeocodificacaoPermissions.Paises.Update;
+            DeletePolicyName = GeGeocodificacaoPermissions.Paises.Delete;
         }
 
         /// <summary>

@@ -6,46 +6,54 @@ public class GeGeocodificacaoPermissions
 {
     public const string GroupName = "GeGeocodificacao";
 
-    public static class Pais
+    public static class Paises
     {
-        public const string Default = GroupName + ".Pais";
+        public const string Default = GroupName + ".Paises";
         public const string Create = Default + ".Create";
         public const string Update = Default + ".Update";
         public const string Delete = Default + ".Delete";
     }
 
-    public static class UnidadeFederativa
+    public static class UnidadesFederativas
     {
-        public const string Default = GroupName + ".UnidadeFederativa";
+        public const string Default = GroupName + ".UnidadesFederativas";
     }
 
-    public static class CidadeMunicipio
+    public static class CidadesMunicipios
     {
-        public const string Default = GroupName + ".CidadeMunicipio";
+        public const string Default = GroupName + ".CidadesMunicipios";
         public const string Create = Default + ".Create";
         public const string Update = Default + ".Update";
         public const string Delete = Default + ".Delete";
     }
 
-    public static class BairroDistrito
+    public static class BairrosDistritos
     {
-        public const string Default = GroupName + ".BairroDistrito";
+        public const string Default = GroupName + ".BairrosDistritos";
         public const string Create = Default + ".Create";
         public const string Update = Default + ".Update";
         public const string Delete = Default + ".Delete";
     }
 
-    public static class Subdistrito
+    public static class Subdistritos
     {
-        public const string Default = GroupName + ".Subdistrito";
+        public const string Default = GroupName + ".Subdistritos";
         public const string Create = Default + ".Create";
         public const string Update = Default + ".Update";
         public const string Delete = Default + ".Delete";
     }
 
-    public static class Logradouro
+    public static class Logradouros
     {
-        public const string Default = GroupName + ".Logradouro";
+        public const string Default = GroupName + ".Logradouros";
+        public const string Create = Default + ".Create";
+        public const string Update = Default + ".Update";
+        public const string Delete = Default + ".Delete";
+    }
+
+    public static class Geolocalizacoes
+    {
+        public const string Default = GroupName + ".Geolocalizacoes";
         public const string Create = Default + ".Create";
         public const string Update = Default + ".Update";
         public const string Delete = Default + ".Delete";

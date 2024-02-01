@@ -28,7 +28,7 @@ namespace NecnatAbp.Br.GeGeocodificacao
 
         protected virtual async Task CheckGetListPolicyAsync()
         {
-            await CheckPolicyAsync(GeGeocodificacaoPermissions.UnidadeFederativa.Default);
+            await CheckPolicyAsync(GeGeocodificacaoPermissions.UnidadesFederativas.Default);
         }
     }
 }

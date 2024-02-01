@@ -11,12 +11,12 @@ public class GeGeocodificacaoDbContext : AbpDbContext<GeGeocodificacaoDbContext>
      * public DbSet<Question> Questions { get; set; }
      */
 
-    public DbSet<Pais> Pais { get; set; }
-    public DbSet<CidadeMunicipio> CidadeMunicipio { get; set; }
-    public DbSet<BairroDistrito> BairroDistrito { get; set; }
-    public DbSet<Subdistrito> Subdistrito { get; set; }
-    public DbSet<Logradouro> Logradouro { get; set; }
-    public DbSet<Geolocalizacao> Geolocalizacao { get; set; }
+    public DbSet<Pais> Paises { get; set; }
+    public DbSet<CidadeMunicipio> CidadesMunicipios { get; set; }
+    public DbSet<BairroDistrito> BairrosDistritos { get; set; }
+    public DbSet<Subdistrito> Subdistritos { get; set; }
+    public DbSet<Logradouro> Logradouros { get; set; }
+    public DbSet<Geolocalizacao> Geolocalizacoes { get; set; }
 
     public GeGeocodificacaoDbContext(DbContextOptions<GeGeocodificacaoDbContext> options)
         : base(options)

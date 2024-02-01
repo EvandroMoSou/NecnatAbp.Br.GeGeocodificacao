@@ -11,10 +11,10 @@ public interface IGeGeocodificacaoDbContext : IEfCoreDbContext
      * DbSet<Question> Questions { get; }
      */
 
-    DbSet<Pais> Pais { get; }
-    DbSet<CidadeMunicipio> CidadeMunicipio { get; }
-    DbSet<BairroDistrito> BairroDistrito { get; set; }
-    DbSet<Subdistrito> Subdistrito { get; set; }
-    DbSet<Logradouro> Logradouro { get; set; }
-    DbSet<Geolocalizacao> Geolocalizacao { get; set; }
+    DbSet<Pais> Paises { get; }
+    DbSet<CidadeMunicipio> CidadesMunicipios { get; }
+    DbSet<BairroDistrito> BairrosDistritos { get; set; }
+    DbSet<Subdistrito> Subdistritos { get; set; }
+    DbSet<Logradouro> Logradouros { get; set; }
+    DbSet<Geolocalizacao> Geolocalizacoes { get; set; }
 }

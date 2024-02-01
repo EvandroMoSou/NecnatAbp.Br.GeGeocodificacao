@@ -1,5 +1,6 @@
 ﻿using NecnatAbp.AppServices;
 using NecnatAbp.Br.GeGeocodificacao.DmGoogleGeocoding;
+using NecnatAbp.Br.GeGeocodificacao.Permissions;
 using NecnatAbp.Extensions;
 using System;
 using System.Collections.Generic;
@@ -29,6 +30,12 @@ namespace NecnatAbp.Br.GeGeocodificacao
             TypedRepository = repository;
             LogradouroRepository = logradouroRepository;
             GoogleGeocodingRepository = googleGeocodingRepository;
+
+            GetPolicyName = GeGeocodificacaoPermissions.Geolocalizacoes.Default;
+            GetListPolicyName = GeGeocodificacaoPermissions.Geolocalizacoes.Default;
+            CreatePolicyName = GeGeocodificacaoPermissions.Geolocalizacoes.Create;
+            UpdatePolicyName = GeGeocodificacaoPermissions.Geolocalizacoes.Update;
+            DeletePolicyName = GeGeocodificacaoPermissions.Geolocalizacoes.Delete;
         }
 
         protected override async Task<IQueryable<Geolocalizacao>> CreateFilteredQuerySearchAsync(GeolocalizacaoResultRequestDto input)

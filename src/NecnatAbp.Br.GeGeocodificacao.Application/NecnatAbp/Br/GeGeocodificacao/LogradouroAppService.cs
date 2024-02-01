@@ -29,11 +29,11 @@ namespace NecnatAbp.Br.GeGeocodificacao
             TypedRepository = repository;
             GoogleGeocodingRepository = googleGeocodingRepository;
 
-            GetPolicyName = GeGeocodificacaoPermissions.Logradouro.Default;
-            GetListPolicyName = GeGeocodificacaoPermissions.Logradouro.Default;
-            CreatePolicyName = GeGeocodificacaoPermissions.Logradouro.Create;
-            UpdatePolicyName = GeGeocodificacaoPermissions.Logradouro.Update;
-            DeletePolicyName = GeGeocodificacaoPermissions.Logradouro.Delete;
+            GetPolicyName = GeGeocodificacaoPermissions.Logradouros.Default;
+            GetListPolicyName = GeGeocodificacaoPermissions.Logradouros.Default;
+            CreatePolicyName = GeGeocodificacaoPermissions.Logradouros.Create;
+            UpdatePolicyName = GeGeocodificacaoPermissions.Logradouros.Update;
+            DeletePolicyName = GeGeocodificacaoPermissions.Logradouros.Delete;
         }
 
         /// <summary>

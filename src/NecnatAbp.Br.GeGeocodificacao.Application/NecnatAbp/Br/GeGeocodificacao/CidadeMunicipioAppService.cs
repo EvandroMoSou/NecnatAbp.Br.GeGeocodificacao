@@ -21,11 +21,11 @@ namespace NecnatAbp.Br.GeGeocodificacao
     {
         public CidadeMunicipioAppService(ICidadeMunicipioRepository repository) : base(repository)
         {
-            GetPolicyName = GeGeocodificacaoPermissions.CidadeMunicipio.Default;
-            GetListPolicyName = GeGeocodificacaoPermissions.CidadeMunicipio.Default;
-            CreatePolicyName = GeGeocodificacaoPermissions.CidadeMunicipio.Create;
-            UpdatePolicyName = GeGeocodificacaoPermissions.CidadeMunicipio.Update;
-            DeletePolicyName = GeGeocodificacaoPermissions.CidadeMunicipio.Delete;
+            GetPolicyName = GeGeocodificacaoPermissions.CidadesMunicipios.Default;
+            GetListPolicyName = GeGeocodificacaoPermissions.CidadesMunicipios.Default;
+            CreatePolicyName = GeGeocodificacaoPermissions.CidadesMunicipios.Create;
+            UpdatePolicyName = GeGeocodificacaoPermissions.CidadesMunicipios.Update;
+            DeletePolicyName = GeGeocodificacaoPermissions.CidadesMunicipios.Delete;
         }
 
         /// <summary>
