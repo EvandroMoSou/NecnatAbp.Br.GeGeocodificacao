@@ -4,31 +4,46 @@
     "MyAccount": "Minha conta",
     "SamplePageMessage": "Uma página de amostra para o módulo GeGeocodificacao",
 
-    "Permission:Pais:Default": "Visualizar País",
-    "Permission:Pais:Create": "Criar País",
-    "Permission:Pais:Edit": "Editar País",
-    "Permission:Pais:Delete": "Excluir País",
+    "Permission:Paises:Default": "Visualizar País",
+    "Permission:Paises:Create": "Criar País",
+    "Permission:Paises:Edit": "Editar País",
+    "Permission:Paises:Delete": "Excluir País",
 
-    "Permission:UnidadeFederativa:Default": "Visualizar UnidadeFederativa",
+    "Permission:UnidadesFederativas:Default": "Visualizar UnidadeFederativa",
 
-    "Permission:CidadeMunicipio:Default": "Visualizar Cidade / Município",
-    "Permission:CidadeMunicipio:Create": "Criar Cidade / Município",
-    "Permission:CidadeMunicipio:Edit": "Editar Cidade / Município",
-    "Permission:CidadeMunicipio:Delete": "Excluir Cidade / Município",
+    "Permission:CidadesMunicipios:Default": "Visualizar Cidade / Município",
+    "Permission:CidadesMunicipios:Create": "Criar Cidade / Município",
+    "Permission:CidadesMunicipios:Edit": "Editar Cidade / Município",
+    "Permission:CidadesMunicipios:Delete": "Excluir Cidade / Município",
 
-    "Permission:BairroDistrito:Default": "Visualizar Bairro / Distrito",
-    "Permission:BairroDistrito:Create": "Criar Bairro / Distrito",
-    "Permission:BairroDistrito:Edit": "Editar Bairro / Distrito",
-    "Permission:BairroDistrito:Delete": "Excluir Bairro / Distrito",
+    "Permission:BairrosDistritos:Default": "Visualizar Bairro / Distrito",
+    "Permission:BairrosDistritos:Create": "Criar Bairro / Distrito",
+    "Permission:BairrosDistritos:Edit": "Editar Bairro / Distrito",
+    "Permission:BairrosDistritos:Delete": "Excluir Bairro / Distrito",
 
-    "Permission:Subdistrito:Default": "Visualizar Subdistrito",
-    "Permission:Subdistrito:Create": "Criar Subdistrito",
-    "Permission:Subdistrito:Edit": "Editar Subdistrito",
-    "Permission:Subdistrito:Delete": "Excluir Subdistrito",
+    "Permission:Subdistritos:Default": "Visualizar Subdistrito",
+    "Permission:Subdistritos:Create": "Criar Subdistrito",
+    "Permission:Subdistritos:Edit": "Editar Subdistrito",
+    "Permission:Subdistritos:Delete": "Excluir Subdistrito",
 
     "Permission:Logradouro:Default": "Visualizar Logradouro",
     "Permission:Logradouro:Create": "Criar Logradouro",
     "Permission:Logradouro:Edit": "Editar Logradouro",
-    "Permission:Logradouro:Delete": "Excluir Logradouro"
+    "Permission:Logradouro:Delete": "Excluir Logradouro",
+
+    "Permission:TiposLogradouro:Default": "Visualizar Tipo de Logradouro",
+    "Permission:TiposLogradouro:Create": "Criar Tipo de Logradouro",
+    "Permission:TiposLogradouro:Edit": "Editar Tipo de Logradouro",
+    "Permission:TiposLogradouro:Delete": "Excluir Tipo de Logradouro",
+
+    "Permission:Logradouros:Default": "Visualizar Logradouro",
+    "Permission:Logradouros:Create": "Criar Logradouro",
+    "Permission:Logradouros:Edit": "Editar Logradouro",
+    "Permission:Logradouros:Delete": "Excluir Logradouro",
+
+    "Permission:Geolocalizacoes:Default": "Visualizar Geolocalização",
+    "Permission:Geolocalizacoes:Create": "Criar Geolocalização",
+    "Permission:Geolocalizacoes:Edit": "Editar Geolocalização",
+    "Permission:Geolocalizacoes:Delete": "Excluir Geolocalização"
   }
 }

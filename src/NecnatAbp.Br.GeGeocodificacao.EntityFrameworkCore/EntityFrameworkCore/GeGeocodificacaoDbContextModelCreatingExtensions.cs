@@ -42,7 +42,7 @@ public static class GeGeocodificacaoDbContextModelCreatingExtensions
             b.Property(x => x.Nome).IsRequired().HasMaxLength(PaisConsts.MaxNomeLength);
             b.Property(x => x.NomeIngles).HasMaxLength(PaisConsts.MaxNomeInglesLength);
             b.Property(x => x.NomeFrances).HasMaxLength(PaisConsts.MaxNomeFrancesLength);
-            b.Property(x => x.Ativo).IsRequired();
+            b.Property(x => x.InAtivo).IsRequired();
             b.Property(x => x.Origem).IsRequired();
 
             b.HasIndex(x => x.CodigoIso3166Alpha2).IsUnique();
@@ -59,7 +59,7 @@ public static class GeGeocodificacaoDbContextModelCreatingExtensions
             b.Property(x => x.UnidadeFederativa).IsRequired();
             b.Property(x => x.Nome).IsRequired().HasMaxLength(CidadeMunicipioConsts.MaxNomeLength);
             b.Property(x => x.CodigoIbge).HasMaxLength(CidadeMunicipioConsts.MaxCodigoIbgeLength);
-            b.Property(x => x.Ativo).IsRequired();
+            b.Property(x => x.InAtivo).IsRequired();
             b.Property(x => x.Origem).IsRequired();
 
             b.HasIndex(x => x.CodigoIbge).IsUnique();
@@ -73,7 +73,7 @@ public static class GeGeocodificacaoDbContextModelCreatingExtensions
             b.ConfigureByConvention(); //auto configure for the base class props
             b.Property(x => x.Nome).IsRequired().HasMaxLength(BairroDistritoConsts.MaxNomeLength);
             b.Property(x => x.CodigoIbge).HasMaxLength(BairroDistritoConsts.MaxCodigoIbgeLength);
-            b.Property(x => x.Ativo).IsRequired();
+            b.Property(x => x.InAtivo).IsRequired();
             b.Property(x => x.Origem).IsRequired();
 
             b.HasOne(o => o.CidadeMunicipio).WithMany().HasForeignKey(x => x.CidadeMunicipioId).IsRequired().OnDelete(DeleteBehavior.Cascade);
@@ -89,13 +89,25 @@ public static class GeGeocodificacaoDbContextModelCreatingExtensions
             b.ConfigureByConvention(); //auto configure for the base class props
             b.Property(x => x.Nome).IsRequired().HasMaxLength(SubdistritoConsts.MaxNomeLength);
             b.Property(x => x.CodigoIbge).HasMaxLength(SubdistritoConsts.MaxCodigoIbgeLength);
-            b.Property(x => x.Ativo).IsRequired();
+            b.Property(x => x.InAtivo).IsRequired();
             b.Property(x => x.Origem).IsRequired();
 
             b.HasOne(o => o.BairroDistrito).WithMany().HasForeignKey(x => x.BairroDistritoId).IsRequired().OnDelete(DeleteBehavior.Cascade);
 
             b.HasIndex(x => x.CodigoIbge).IsUnique();
             b.HasIndex(x => new { x.BairroDistritoId, x.Nome }).IsUnique();
+        });
+
+        builder.Entity<TipoLogradouro>(b =>
+        {
+            b.ToTable(AbpGeGeocodificacaoDbProperties.DbTablePrefix + "TipoLogradouro",
+                AbpGeGeocodificacaoDbProperties.DbSchema);
+            b.ConfigureByConvention(); //auto configure for the base class props
+            b.Property(x => x.Nome).IsRequired().HasMaxLength(TipoLogradouroConsts.MaxNomeLength);
+            b.Property(x => x.InAtivo).IsRequired();
+            b.Property(x => x.Origem).IsRequired();
+
+            b.HasIndex(x => x.Nome).IsUnique();
         });
 
         builder.Entity<Logradouro>(b =>
@@ -106,7 +118,7 @@ public static class GeGeocodificacaoDbContextModelCreatingExtensions
             b.Property(x => x.Nome).IsRequired().HasMaxLength(LogradouroConsts.MaxNomeLength);
             b.Property(x => x.NomeAbreviado).HasMaxLength(LogradouroConsts.MaxNomeAbreviadoLength);
             b.Property(x => x.Complemento).HasMaxLength(LogradouroConsts.MaxComplementoLength);
-            b.Property(x => x.Ativo).IsRequired();
+            b.Property(x => x.InAtivo).IsRequired();
             b.Property(x => x.Origem).IsRequired();
 
             b.HasOne(o => o.Pais).WithMany().HasForeignKey(x => x.PaisId).IsRequired().OnDelete(DeleteBehavior.NoAction);
@@ -125,7 +137,7 @@ public static class GeGeocodificacaoDbContextModelCreatingExtensions
             b.ConfigureByConvention(); //auto configure for the base class props
             b.Property(x => x.Latitude).HasPrecision(10, 8);
             b.Property(x => x.Longitude).HasPrecision(11, 8);
-            b.Property(x => x.Ativo).IsRequired();
+            b.Property(x => x.InAtivo).IsRequired();
             b.Property(x => x.Origem).IsRequired();
 
             b.HasOne(o => o.Logradouro).WithMany().HasForeignKey(x => x.LogradouroId).IsRequired().OnDelete(DeleteBehavior.Cascade);

@@ -12,6 +12,6 @@ namespace NecnatAbp.Br.GeGeocodificacao
         public Guid? BairroDistritoId { get; set; }
         public Guid? CidadeMunicipioId { get; set; }
         public UnidadeFederativa? UnidadeFederativa { get; set; }
-        public bool? Ativo { get; set; }
+        public bool? InAtivo { get; set; }
     }
 }

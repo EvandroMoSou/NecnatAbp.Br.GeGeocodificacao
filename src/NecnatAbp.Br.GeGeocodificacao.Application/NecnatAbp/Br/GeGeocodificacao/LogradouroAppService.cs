@@ -85,8 +85,8 @@ namespace NecnatAbp.Br.GeGeocodificacao
             if (input.BairroDistritoId != null && input.BairroDistritoId != Guid.Empty)
                 q = q.Where(x => x.BairroDistritoId == input.BairroDistritoId);
 
-            if (input.Ativo != null)
-                q = q.Where(x => x.Ativo == input.Ativo);
+            if (input.InAtivo != null)
+                q = q.Where(x => x.InAtivo == input.InAtivo);
 
             return q;
         }

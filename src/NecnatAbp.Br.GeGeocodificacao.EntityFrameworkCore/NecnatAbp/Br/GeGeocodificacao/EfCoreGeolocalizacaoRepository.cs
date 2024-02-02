@@ -43,7 +43,7 @@ namespace NecnatAbp.Br.GeGeocodificacao
             eDb.Numero = e.Numero;
             eDb.Latitude = e.Latitude;
             eDb.Longitude = e.Longitude;
-            eDb.Ativo = e.Ativo;
+            eDb.InAtivo = e.InAtivo;
             eDb.Origem = e.Origem;
 
             if (isInsert)

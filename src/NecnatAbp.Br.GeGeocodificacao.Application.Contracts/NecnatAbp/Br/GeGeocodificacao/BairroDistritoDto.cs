@@ -8,7 +8,7 @@ namespace NecnatAbp.Br.GeGeocodificacao
         public Guid? CidadeMunicipioId { get; set; }
         public string? Nome { get; set; }
         public string? CodigoIbge { get; set; }
-        public bool? Ativo { get; set; }
+        public bool? InAtivo { get; set; }
 
         public SubdistritoDto? Subdistrito { get; set; }
     }

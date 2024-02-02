@@ -8,6 +8,6 @@ namespace NecnatAbp.Br.GeGeocodificacao
         public Guid? BairroDistritoId { get; set; }
         public string? Nome { get; set; }
         public string? CodigoIbge { get; set; }
-        public bool? Ativo { get; set; }
+        public bool? InAtivo { get; set; }
     }
 }

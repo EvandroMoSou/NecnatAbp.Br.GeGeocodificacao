@@ -17,6 +17,6 @@ namespace NecnatAbp.Br.GeGeocodificacao
         public string? CodigoIbge { get; set; }
 
         [Required]
-        public bool Ativo { get; set; }
+        public bool InAtivo { get; set; }
     }
 }

@@ -28,6 +28,6 @@ namespace NecnatAbp.Br.GeGeocodificacao
         public string? CodigoIso3166Numeric { get; set; }
 
         [Required]
-        public bool Ativo { get; set; }
+        public bool InAtivo { get; set; }
     }
 }

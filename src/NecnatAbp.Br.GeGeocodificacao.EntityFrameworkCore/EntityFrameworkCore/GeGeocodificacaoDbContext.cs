@@ -15,6 +15,7 @@ public class GeGeocodificacaoDbContext : AbpDbContext<GeGeocodificacaoDbContext>
     public DbSet<CidadeMunicipio> CidadesMunicipios { get; set; }
     public DbSet<BairroDistrito> BairrosDistritos { get; set; }
     public DbSet<Subdistrito> Subdistritos { get; set; }
+    public DbSet<TipoLogradouro> TiposLogradouro { get; set; }
     public DbSet<Logradouro> Logradouros { get; set; }
     public DbSet<Geolocalizacao> Geolocalizacoes { get; set; }
 

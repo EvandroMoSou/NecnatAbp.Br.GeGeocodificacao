@@ -67,8 +67,8 @@ namespace NecnatAbp.Br.GeGeocodificacao
                 q = q.Where(x => x.Nome.Contains(input.NomeContains));
             }
 
-            if (input.Ativo != null)
-                q = q.Where(x => x.Ativo == input.Ativo);
+            if (input.InAtivo != null)
+                q = q.Where(x => x.InAtivo == input.InAtivo);
 
             return q;
         }

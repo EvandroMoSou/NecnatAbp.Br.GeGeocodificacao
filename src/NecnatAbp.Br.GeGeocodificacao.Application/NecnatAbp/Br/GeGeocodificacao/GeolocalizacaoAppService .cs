@@ -52,8 +52,8 @@ namespace NecnatAbp.Br.GeGeocodificacao
             q = q.Where(x => x.Logradouro!.Cep == int.Parse(input.Cep.OnlyDigits()));
             q = q.Where(x => x.Numero == input.Numero);
 
-            if (input.Ativo != null)
-                q = q.Where(x => x.Ativo == input.Ativo);
+            if (input.InAtivo != null)
+                q = q.Where(x => x.InAtivo == input.InAtivo);
 
             return q;
         }

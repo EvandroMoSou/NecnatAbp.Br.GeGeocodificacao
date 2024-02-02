@@ -11,7 +11,7 @@ namespace NecnatAbp.Br.GeGeocodificacao
         public string? CodigoIso3166Alpha2 { get; set; }
         public string? CodigoIso3166Alpha3 { get; set; }
         public string? CodigoIso3166Numeric { get; set; }
-        public bool Ativo { get; set; }
+        public bool InAtivo { get; set; }
         public int Origem { get; set; }
     }
 }

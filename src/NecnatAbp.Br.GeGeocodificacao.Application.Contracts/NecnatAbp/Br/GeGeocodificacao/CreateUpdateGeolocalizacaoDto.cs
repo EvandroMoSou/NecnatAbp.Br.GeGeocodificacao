@@ -18,6 +18,6 @@ namespace NecnatAbp.Br.GeGeocodificacao
         public decimal Longitude { get; set; }
 
         [Required]
-        public bool Ativo { get; set; }
+        public bool InAtivo { get; set; }
     }
 }

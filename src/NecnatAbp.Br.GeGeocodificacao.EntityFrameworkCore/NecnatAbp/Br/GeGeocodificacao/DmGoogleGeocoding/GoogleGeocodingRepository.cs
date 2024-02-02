@@ -189,7 +189,7 @@ namespace NecnatAbp.Br.GeGeocodificacao.DmGoogleGeocoding
                             UnidadeFederativa = iGeolocalizacao.Logradouro.UnidadeFederativa,
                             Nome = iGeolocalizacao.Logradouro.CidadeMunicipio.Nome,
                             Origem = (int)OrigemGeocodificacao.Google,
-                            Ativo = true
+                            InAtivo = true
                         }, true);
                     insertLogradouro.CidadeMunicipioId = cidadeMunicipio.Id;
 
@@ -199,7 +199,7 @@ namespace NecnatAbp.Br.GeGeocodificacao.DmGoogleGeocoding
                             CidadeMunicipioId = cidadeMunicipio.Id,
                             Nome = iGeolocalizacao.Logradouro.BairroDistrito.Nome,
                             Origem = (int)OrigemGeocodificacao.Google,
-                            Ativo = true
+                            InAtivo = true
                         }, true);
                     insertLogradouro.BairroDistritoId = bairro.Id;
 
@@ -220,7 +220,7 @@ namespace NecnatAbp.Br.GeGeocodificacao.DmGoogleGeocoding
                             Latitude = iGeolocalizacao.Latitude,
                             Longitude = iGeolocalizacao.Longitude,
                             Origem = (int)OrigemGeocodificacao.Google,
-                            Ativo = true
+                            InAtivo = true
                         }, true));
                 else
                     l.Add(iGeolocalizacao);

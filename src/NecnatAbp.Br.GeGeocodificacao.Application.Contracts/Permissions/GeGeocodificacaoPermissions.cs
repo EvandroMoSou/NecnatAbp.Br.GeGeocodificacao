@@ -43,6 +43,14 @@ public class GeGeocodificacaoPermissions
         public const string Delete = Default + ".Delete";
     }
 
+    public static class TiposLogradouro
+    {
+        public const string Default = GroupName + ".TiposLogradouro";
+        public const string Create = Default + ".Create";
+        public const string Update = Default + ".Update";
+        public const string Delete = Default + ".Delete";
+    }
+
     public static class Logradouros
     {
         public const string Default = GroupName + ".Logradouros";

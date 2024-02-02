@@ -7,6 +7,6 @@ namespace NecnatAbp.Br.GeGeocodificacao
     {
         public string? Cep { get; set; }
         public int? Numero { get; set; }
-        public bool? Ativo { get; set; }
+        public bool? InAtivo { get; set; }
     }
 }

@@ -76,7 +76,7 @@ namespace NecnatAbp.Br.GeGeocodificacao.DataSeedContributors
 
                         if (eDb == null)
                         {
-                            iEntidade.Ativo = true;
+                            iEntidade.InAtivo = true;
                             await _paisRepository.InsertAsync(iEntidade);
                         }                            
                         else
@@ -88,7 +88,7 @@ namespace NecnatAbp.Br.GeGeocodificacao.DataSeedContributors
                             eDb.CodigoIso3166Alpha2 = iEntidade.CodigoIso3166Alpha2;
                             eDb.CodigoIso3166Alpha3 = iEntidade.CodigoIso3166Alpha3;
                             eDb.CodigoIso3166Numeric = iEntidade.CodigoIso3166Numeric;
-                            eDb.Ativo = true;
+                            eDb.InAtivo = true;
                             eDb.Origem = (int)OrigemGeocodificacao.Iso3166;
                             await _paisRepository.UpdateAsync(iEntidade);
                         }

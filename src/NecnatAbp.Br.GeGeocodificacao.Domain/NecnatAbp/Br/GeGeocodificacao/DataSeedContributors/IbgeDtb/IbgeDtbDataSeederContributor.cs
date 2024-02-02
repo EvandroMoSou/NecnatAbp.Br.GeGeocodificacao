@@ -103,7 +103,7 @@ namespace NecnatAbp.Br.GeGeocodificacao.DataSeedContributors
                                 eDb.UnidadeFederativa = unidadeFederativa;
                                 eDb.CodigoIbge = codigoIbge;
                                 eDb.Nome = nome;
-                                eDb.Ativo = true;
+                                eDb.InAtivo = true;
                                 eDb.Origem = (int)OrigemGeocodificacao.Ibge;
 
                                 if (isInsert)
@@ -185,7 +185,7 @@ namespace NecnatAbp.Br.GeGeocodificacao.DataSeedContributors
                                 eDb.CidadeMunicipioId = cidadeMunicipio.Id;
                                 eDb.CodigoIbge = codigoIbge;
                                 eDb.Nome = nome;
-                                eDb.Ativo = true;
+                                eDb.InAtivo = true;
                                 eDb.Origem = (int)OrigemGeocodificacao.Ibge;
 
                                 if (isInsert)
@@ -270,7 +270,7 @@ namespace NecnatAbp.Br.GeGeocodificacao.DataSeedContributors
                                 eDb.BairroDistritoId = bairroDistrito.Id;
                                 eDb.CodigoIbge = codigoIbge;
                                 eDb.Nome = nome;
-                                eDb.Ativo = true;
+                                eDb.InAtivo = true;
                                 eDb.Origem = (int)OrigemGeocodificacao.Ibge;
 
                                 if (isInsert)

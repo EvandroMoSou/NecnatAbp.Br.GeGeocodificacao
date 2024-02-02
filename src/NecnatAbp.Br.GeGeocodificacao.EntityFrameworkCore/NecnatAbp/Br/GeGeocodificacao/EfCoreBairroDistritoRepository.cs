@@ -36,7 +36,7 @@ namespace NecnatAbp.Br.GeGeocodificacao
         public async Task<int> UpdateAllAtivoAsync(bool ativo)
         {
             var dbSet = await GetDbSetAsync();
-            return await dbSet.ExecuteUpdateAsync(s => s.SetProperty(e => e.Ativo, ativo));
+            return await dbSet.ExecuteUpdateAsync(s => s.SetProperty(e => e.InAtivo, ativo));
         }
 
         public async Task<BairroDistrito> MaintainAsync(BairroDistrito e, bool autoSave = false)
@@ -49,13 +49,13 @@ namespace NecnatAbp.Br.GeGeocodificacao
             else if (eDb!.CidadeMunicipioId == e.CidadeMunicipioId
                 && eDb.Nome == e.Nome
                 && (e.CodigoIbge != null && eDb.CodigoIbge == e.CodigoIbge)
-                && eDb.Ativo == e.Ativo)
+                && eDb.InAtivo == e.InAtivo)
                 return eDb;
 
             eDb!.CidadeMunicipioId = e.CidadeMunicipioId;
             eDb.Nome = e.Nome;
             eDb.CodigoIbge = e.CodigoIbge;
-            eDb.Ativo = e.Ativo;
+            eDb.InAtivo = e.InAtivo;
             eDb.Origem = e.Origem;
 
             if (isInsert)

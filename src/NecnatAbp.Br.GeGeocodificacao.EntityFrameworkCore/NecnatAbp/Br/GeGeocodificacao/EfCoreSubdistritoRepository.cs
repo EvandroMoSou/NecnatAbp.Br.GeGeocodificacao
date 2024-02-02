@@ -43,7 +43,7 @@ namespace NecnatAbp.Br.GeGeocodificacao
         public async Task<int> UpdateAllAtivoAsync(bool ativo)
         {
             var dbSet = await GetDbSetAsync();
-            return await dbSet.ExecuteUpdateAsync(s => s.SetProperty(e => e.Ativo, ativo));
+            return await dbSet.ExecuteUpdateAsync(s => s.SetProperty(e => e.InAtivo, ativo));
         }
     }
 }

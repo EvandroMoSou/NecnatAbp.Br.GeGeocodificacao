@@ -6,7 +6,8 @@ namespace NecnatAbp.Br.GeGeocodificacao
     public class Logradouro : AuditedAggregateRoot<Guid>
     {
         public int Cep { get; set; }
-
+        public Guid TipoLogradouroId { get; set; }
+        public TipoLogradouro? TipoLogradouro { get; set; }
         public string Nome { get; set; } = string.Empty;
         public string? NomeAbreviado { get; set; }
         public string? Complemento { get; set; }
@@ -17,7 +18,7 @@ namespace NecnatAbp.Br.GeGeocodificacao
         public UnidadeFederativa UnidadeFederativa { get; set; }
         public Guid PaisId { get; set; }
         public Pais? Pais { get; set; }
-        public bool Ativo { get; set; }
+        public bool InAtivo { get; set; }
         public int Origem { get; set; }
     }
 }

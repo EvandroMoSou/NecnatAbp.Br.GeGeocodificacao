@@ -10,6 +10,8 @@ namespace NecnatAbp.Br.GeGeocodificacao
         [StringLength(LogradouroConsts.MaxCepLength)]
         public string Cep { get; set; } = string.Empty;
 
+        public Guid? TipoLogradouroId { get; set; }
+
         [Required]
         [StringLength(LogradouroConsts.MaxNomeLength)]
         public string Nome { get; set; } = string.Empty;
@@ -30,6 +32,6 @@ namespace NecnatAbp.Br.GeGeocodificacao
         public UnidadeFederativa? UnidadeFederativa { get; set; }
 
         [Required]
-        public bool Ativo { get; set; }
+        public bool InAtivo { get; set; }
     }
 }
