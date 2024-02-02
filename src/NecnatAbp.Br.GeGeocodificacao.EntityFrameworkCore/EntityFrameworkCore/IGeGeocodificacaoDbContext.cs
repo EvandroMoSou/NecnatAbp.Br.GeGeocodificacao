@@ -17,4 +17,5 @@ public interface IGeGeocodificacaoDbContext : IEfCoreDbContext
     DbSet<Subdistrito> Subdistritos { get; set; }
     DbSet<Logradouro> Logradouros { get; set; }
     DbSet<Geolocalizacao> Geolocalizacoes { get; set; }
+    DbSet<TipoLogradouro> TiposLogradouro { get; set; }
 }

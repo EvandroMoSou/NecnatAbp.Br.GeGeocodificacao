@@ -7,7 +7,7 @@
     <Nullable>enable</Nullable>
     <RootNamespace>NecnatAbp.Br.GeGeocodificacao</RootNamespace>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    <Version>8.0.2-rc004</Version>
+    <Version>8.0.2-rc006</Version>
   </PropertyGroup>
 
   <ItemGroup>

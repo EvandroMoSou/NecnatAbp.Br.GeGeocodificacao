@@ -1,11 +1,8 @@
-﻿using System;
+﻿using NecnatAbp.Br.GeGeocodificacao.Bases;
 
 namespace NecnatAbp.Br.GeGeocodificacao
 {
-    public class BairroDistritoFallbackResultRequestDto
+    public class BairroDistritoFallbackResultRequestDto : BairroDistritoFallbackResultRequestDtoBase
     {
-        public string? GenericSearch { get; set; }
-        public Guid? CidadeMunicipioId { get; set; }
-        public int ActiveFallbackCount { get; set; } = 5;
     }
 }

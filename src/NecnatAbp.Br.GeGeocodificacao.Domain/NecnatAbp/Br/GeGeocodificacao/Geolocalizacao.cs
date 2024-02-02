@@ -1,16 +1,6 @@
-﻿using System;
-using Volo.Abp.Domain.Entities.Auditing;
-
-namespace NecnatAbp.Br.GeGeocodificacao
+﻿namespace NecnatAbp.Br.GeGeocodificacao
 {
-    public class Geolocalizacao : AuditedAggregateRoot<Guid>
+    public class Geolocalizacao : GeolocalizacaoBase<BairroDistrito, CidadeMunicipio, Logradouro, TipoLogradouro>
     {
-        public Guid LogradouroId { get; set; }
-        public Logradouro? Logradouro { get; set; }
-        public int? Numero { get; set; }
-        public decimal? Latitude { get; set; }
-        public decimal? Longitude { get; set; }
-        public bool InAtivo { get; set; }
-        public int Origem { get; set; }
     }
 }

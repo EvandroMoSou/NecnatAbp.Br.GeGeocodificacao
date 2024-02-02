@@ -1,14 +1,8 @@
-﻿using NecnatAbp.Dtos;
-using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using NecnatAbp.Br.GeGeocodificacao.Bases;
 
 namespace NecnatAbp.Br.GeGeocodificacao
 {
-    public class TipoLogradouroDto : ConcurrencyAuditedEntityDto<Guid>
+    public class TipoLogradouroDto : TipoLogradouroDtoBase
     {
-        public string? Sigla { get; set; }
-        public string? Nome { get; set; }
-        public bool InAtivo { get; set; }
     }
 }

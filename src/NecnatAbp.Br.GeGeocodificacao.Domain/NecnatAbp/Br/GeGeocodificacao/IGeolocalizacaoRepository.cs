@@ -1,12 +1,6 @@
-﻿using System;
-using System.Threading.Tasks;
-using Volo.Abp.Domain.Repositories;
-
-namespace NecnatAbp.Br.GeGeocodificacao
+﻿namespace NecnatAbp.Br.GeGeocodificacao
 {
-    public interface IGeolocalizacaoRepository : IRepository<Geolocalizacao, Guid>
+    public interface IGeolocalizacaoRepository : IGeolocalizacaoRepositoryBase<BairroDistrito, CidadeMunicipio, Geolocalizacao, Logradouro, TipoLogradouro>
     {
-        Task<Geolocalizacao?> GetByCepAndNumeroWithLogradouroAsync(int cep, int? numero);
-        Task<Geolocalizacao> MaintainAsync(Geolocalizacao e, bool autoSave = false);
     }
 }

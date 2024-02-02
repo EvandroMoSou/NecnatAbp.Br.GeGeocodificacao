@@ -1,13 +1,8 @@
-﻿using NecnatAbp.Dtos;
-using System;
+﻿using NecnatAbp.Br.GeGeocodificacao.Bases;
 
 namespace NecnatAbp.Br.GeGeocodificacao
 {
-    public class CidadeMunicipioDto : ConcurrencyAuditedEntityDto<Guid>
+    public class CidadeMunicipioDto : CidadeMunicipioDtoBase
     {
-        public UnidadeFederativa? UnidadeFederativa { get; set; }
-        public string? Nome { get; set; }
-        public string? CodigoIbge { get; set; }
-        public bool? InAtivo { get; set; }
     }
 }

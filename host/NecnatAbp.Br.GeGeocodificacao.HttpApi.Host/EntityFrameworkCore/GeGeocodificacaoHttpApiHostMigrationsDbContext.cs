@@ -15,6 +15,6 @@ public class GeGeocodificacaoHttpApiHostMigrationsDbContext : AbpDbContext<GeGeo
     {
         base.OnModelCreating(modelBuilder);
 
-        modelBuilder.ConfigureGeGeocodificacao();
+        GeGeocodificacaoDbContextModelCreatingExtensions.ConfigureGeGeocodificacao(modelBuilder);
     }
 }

@@ -1,15 +1,8 @@
-﻿using NecnatAbp.Dtos;
-using System;
+﻿using NecnatAbp.Br.GeGeocodificacao.Bases;
 
 namespace NecnatAbp.Br.GeGeocodificacao
 {
-    public class BairroDistritoDto : ConcurrencyAuditedEntityDto<Guid>
+    public class BairroDistritoDto : BairroDistritoDtoBase<SubdistritoDto>
     {
-        public Guid? CidadeMunicipioId { get; set; }
-        public string? Nome { get; set; }
-        public string? CodigoIbge { get; set; }
-        public bool? InAtivo { get; set; }
-
-        public SubdistritoDto? Subdistrito { get; set; }
     }
 }
