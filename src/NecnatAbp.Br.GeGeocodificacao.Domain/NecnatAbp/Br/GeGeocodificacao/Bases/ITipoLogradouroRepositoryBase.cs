@@ -5,7 +5,7 @@ namespace NecnatAbp.Br.GeGeocodificacao
 {
     public interface ITipoLogradouroRepositoryBase<TTipoLogradouro>
         : IRepository<TTipoLogradouro, Guid>
-        where TTipoLogradouro : TipoLogradouro
+        where TTipoLogradouro : TipoLogradouroBase
     {
     }
 }

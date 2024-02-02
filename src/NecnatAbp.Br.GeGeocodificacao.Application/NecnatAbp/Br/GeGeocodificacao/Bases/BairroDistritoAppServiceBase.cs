@@ -11,7 +11,7 @@ using Volo.Abp.Application.Dtos;
 
 namespace NecnatAbp.Br.GeGeocodificacao
 {
-    public class BairroDistritoAppServiceBase<
+    public abstract class BairroDistritoAppServiceBase<
         TBairroDistrito, TBairroDistritoDto, TCreateUpdateBairroDistritoDto, TBairroDistritoResultRequestDto, TBairroDistritoFallbackResultRequestDto,
         TCidadeMunicipio, TSubdistrito, TSubdistritoDto> :
         CrudsAppService<

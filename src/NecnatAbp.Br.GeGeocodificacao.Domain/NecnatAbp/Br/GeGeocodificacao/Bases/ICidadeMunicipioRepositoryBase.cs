@@ -6,7 +6,7 @@ namespace NecnatAbp.Br.GeGeocodificacao
 {
     public interface ICidadeMunicipioRepositoryBase<TCidadeMunicipio>
         : IRepository<TCidadeMunicipio, Guid>
-        where TCidadeMunicipio : CidadeMunicipio
+        where TCidadeMunicipio : CidadeMunicipioBase
     {
         Task<TCidadeMunicipio?> GetByCodigoIbgeAsync(string codigoIbge);
         Task<TCidadeMunicipio?> GetByUnidadeFederativaAndNomeAsync(UnidadeFederativa unidadeFederativa, string nome);

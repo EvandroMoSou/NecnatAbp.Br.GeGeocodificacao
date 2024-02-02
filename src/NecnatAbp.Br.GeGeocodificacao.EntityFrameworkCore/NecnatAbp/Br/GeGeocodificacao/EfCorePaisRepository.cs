@@ -4,7 +4,7 @@ using Volo.Abp.EntityFrameworkCore;
 
 namespace NecnatAbp.Br.GeGeocodificacao
 {
-    public class EfCorePaisRepository : EfCorePaisRepositoryBase<GeGeocodificacaoDbContext, Pais>, IPaisRepository
+    public class EfCorePaisRepository : EfCorePaisRepositoryBase<GeGeocodificacaoDbContext, Pais>, IPaisRepositoryBase<Pais>
     {
         public EfCorePaisRepository(IDbContextProvider<GeGeocodificacaoDbContext> dbContextProvider) : base(dbContextProvider)
         {
