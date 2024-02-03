@@ -1,6 +1,9 @@
-﻿namespace NecnatAbp.Br.GeGeocodificacao
+﻿using System;
+using Volo.Abp.Domain.Repositories;
+
+namespace NecnatAbp.Br.GeGeocodificacao
 {
-    public interface ITipoLogradouroRepository : ITipoLogradouroRepositoryBase<TipoLogradouro>
+    public interface ITipoLogradouroRepository : IRepository<TipoLogradouro, Guid>
     {
     }
 }

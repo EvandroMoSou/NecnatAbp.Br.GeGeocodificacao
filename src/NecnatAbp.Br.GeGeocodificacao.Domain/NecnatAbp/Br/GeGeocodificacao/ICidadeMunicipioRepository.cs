@@ -1,6 +1,14 @@
-﻿namespace NecnatAbp.Br.GeGeocodificacao
+﻿using System;
+using System.Threading.Tasks;
+using Volo.Abp.Domain.Repositories;
+
+namespace NecnatAbp.Br.GeGeocodificacao
 {
-    public interface ICidadeMunicipioRepository : ICidadeMunicipioRepositoryBase<CidadeMunicipio>
+    public interface ICidadeMunicipioRepository : IRepository<CidadeMunicipio, Guid>
     {
+        Task<CidadeMunicipio?> GetByCodigoIbgeAsync(string codigoIbge);
+        Task<CidadeMunicipio?> GetByUnidadeFederativaAndNomeAsync(UnidadeFederativa unidadeFederativa, string nome);
+        Task<int> UpdateAllAtivoAsync(bool ativo);
+        Task<CidadeMunicipio> MaintainAsync(CidadeMunicipio e, bool autoSave = false);
     }
 }

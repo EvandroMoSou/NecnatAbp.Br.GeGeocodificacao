@@ -28,7 +28,6 @@ public class UnifiedDbContext : AbpDbContext<UnifiedDbContext>
         modelBuilder.ConfigureIdentity();
         modelBuilder.ConfigureFeatureManagement();
         modelBuilder.ConfigureTenantManagement();
-
-        GeGeocodificacaoDbContextModelCreatingExtensions.ConfigureGeGeocodificacao(modelBuilder);
+        modelBuilder.ConfigureGeGeocodificacao();
     }
 }
