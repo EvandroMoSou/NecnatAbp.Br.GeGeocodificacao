@@ -11,17 +11,17 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="NecnatAbp\Br\GeGeocodificacao\DataSeedContributors\IbgeDtb\Date2022\RELATORIO_DTB_BRASIL_DISTRITO.csv" />
-    <None Remove="NecnatAbp\Br\GeGeocodificacao\DataSeedContributors\IbgeDtb\Date2022\RELATORIO_DTB_BRASIL_MUNICIPIO.csv" />
-    <None Remove="NecnatAbp\Br\GeGeocodificacao\DataSeedContributors\IbgeDtb\Date2022\RELATORIO_DTB_BRASIL_SUBDISTRITO.csv" />
-    <None Remove="NecnatAbp\Br\GeGeocodificacao\DataSeedContributors\Iso3166\Date20230921\ISO3166.json" />
+    <None Remove="NecnatAbp\Br\GeGeocodificacao\Core\DataSeedContributors\IbgeDtb\Date2022\RELATORIO_DTB_BRASIL_DISTRITO.csv" />
+    <None Remove="NecnatAbp\Br\GeGeocodificacao\Core\DataSeedContributors\IbgeDtb\Date2022\RELATORIO_DTB_BRASIL_MUNICIPIO.csv" />
+    <None Remove="NecnatAbp\Br\GeGeocodificacao\Core\DataSeedContributors\IbgeDtb\Date2022\RELATORIO_DTB_BRASIL_SUBDISTRITO.csv" />
+    <None Remove="NecnatAbp\Br\GeGeocodificacao\Core\DataSeedContributors\Iso3166\Date20230921\ISO3166.json" />
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Include="NecnatAbp\Br\GeGeocodificacao\DataSeedContributors\IbgeDtb\Date2022\RELATORIO_DTB_BRASIL_DISTRITO.csv" />
-    <EmbeddedResource Include="NecnatAbp\Br\GeGeocodificacao\DataSeedContributors\IbgeDtb\Date2022\RELATORIO_DTB_BRASIL_MUNICIPIO.csv" />
-    <EmbeddedResource Include="NecnatAbp\Br\GeGeocodificacao\DataSeedContributors\IbgeDtb\Date2022\RELATORIO_DTB_BRASIL_SUBDISTRITO.csv" />
-    <EmbeddedResource Include="NecnatAbp\Br\GeGeocodificacao\DataSeedContributors\Iso3166\Date20230921\ISO3166.json" />
+    <EmbeddedResource Include="NecnatAbp\Br\GeGeocodificacao\Core\DataSeedContributors\IbgeDtb\Date2022\RELATORIO_DTB_BRASIL_DISTRITO.csv" />
+    <EmbeddedResource Include="NecnatAbp\Br\GeGeocodificacao\Core\DataSeedContributors\IbgeDtb\Date2022\RELATORIO_DTB_BRASIL_MUNICIPIO.csv" />
+    <EmbeddedResource Include="NecnatAbp\Br\GeGeocodificacao\Core\DataSeedContributors\IbgeDtb\Date2022\RELATORIO_DTB_BRASIL_SUBDISTRITO.csv" />
+    <EmbeddedResource Include="NecnatAbp\Br\GeGeocodificacao\Core\DataSeedContributors\Iso3166\Date20230921\ISO3166.json" />
   </ItemGroup>
 
   <ItemGroup>
