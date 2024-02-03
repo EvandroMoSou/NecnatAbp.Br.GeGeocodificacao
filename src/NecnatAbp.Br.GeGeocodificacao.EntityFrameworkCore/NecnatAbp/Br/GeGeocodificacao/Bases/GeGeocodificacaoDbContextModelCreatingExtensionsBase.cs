@@ -7,13 +7,13 @@ namespace NecnatAbp.Br.GeGeocodificacao.Bases
     public abstract class GeGeocodificacaoDbContextModelCreatingExtensionsBase<
         TPais, TCidadeMunicipio, TBairroDistrito, TSubdistrito, TTipoLogradouro,
         TLogradouro, TGeolocalizacao>
-        where TPais : PaisBase
-        where TCidadeMunicipio : CidadeMunicipioBase
-        where TBairroDistrito : BairroDistritoBase<TCidadeMunicipio>
-        where TSubdistrito : SubdistritoBase<TBairroDistrito, TCidadeMunicipio>
-        where TTipoLogradouro : TipoLogradouroBase
-        where TLogradouro : LogradouroBase<TBairroDistrito, TCidadeMunicipio, TTipoLogradouro>
-        where TGeolocalizacao : GeolocalizacaoBase<TBairroDistrito, TCidadeMunicipio, TLogradouro, TTipoLogradouro>
+        where TPais : Pais
+        where TCidadeMunicipio : CidadeMunicipio
+        where TBairroDistrito : BairroDistrito
+        where TSubdistrito : Subdistrito
+        where TTipoLogradouro : TipoLogradouro
+        where TLogradouro : Logradouro
+        where TGeolocalizacao : Geolocalizacao
     {
         public static void ConfigureGeGeocodificacao(ModelBuilder builder)
         {

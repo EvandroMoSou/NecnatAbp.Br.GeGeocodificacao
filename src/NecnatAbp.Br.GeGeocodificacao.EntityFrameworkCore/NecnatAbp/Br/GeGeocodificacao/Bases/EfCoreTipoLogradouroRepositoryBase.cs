@@ -9,7 +9,7 @@ namespace NecnatAbp.Br.GeGeocodificacao.Bases
         : EfCoreRepository<TEfCoreDbContext, TTipoLogradouro, Guid>,
         ITipoLogradouroRepositoryBase<TTipoLogradouro>,
         IRepository<TTipoLogradouro, Guid>
-        where TTipoLogradouro : TipoLogradouroBase, new()
+        where TTipoLogradouro : TipoLogradouro, new()
         where TEfCoreDbContext : ITipoLogradouroDbContext<TTipoLogradouro>
     {
         public EfCoreTipoLogradouroRepositoryBase(IDbContextProvider<TEfCoreDbContext> dbContextProvider) : base(dbContextProvider)

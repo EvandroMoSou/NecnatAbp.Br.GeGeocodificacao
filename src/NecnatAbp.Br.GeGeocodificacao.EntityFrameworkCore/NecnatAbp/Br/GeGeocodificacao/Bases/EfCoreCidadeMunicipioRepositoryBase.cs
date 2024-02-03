@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using NecnatAbp.Br.GeGeocodificacao.Bases;
 using System;
 using System.Linq;
 using System.Threading.Tasks;
@@ -12,7 +13,7 @@ namespace NecnatAbp.Br.GeGeocodificacao.Bases
         : EfCoreRepository<TEfCoreDbContext, TCidadeMunicipio, Guid>,
         ICidadeMunicipioRepositoryBase<TCidadeMunicipio>,
         IRepository<TCidadeMunicipio, Guid>
-        where TCidadeMunicipio : CidadeMunicipioBase, new()
+        where TCidadeMunicipio : CidadeMunicipio, new()
         where TEfCoreDbContext : ICidadeMunicipioDbContext<TCidadeMunicipio>
     {
         public EfCoreCidadeMunicipioRepositoryBase(IDbContextProvider<TEfCoreDbContext> dbContextProvider) : base(dbContextProvider)
