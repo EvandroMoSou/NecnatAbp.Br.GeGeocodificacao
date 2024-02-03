@@ -5,7 +5,7 @@ using Volo.Abp.EntityFrameworkCore;
 
 namespace NecnatAbp.Br.GeGeocodificacao
 {
-    public class EfCoreTipoLogradouroRepository : EfCoreRepository<GeGeocodificacaoDbContext, TipoLogradouro, Guid>, ITipoLogradouroRepository
+    public partial class EfCoreTipoLogradouroRepository : EfCoreRepository<GeGeocodificacaoDbContext, TipoLogradouro, Guid>, ITipoLogradouroRepository
     {
         public EfCoreTipoLogradouroRepository(IDbContextProvider<GeGeocodificacaoDbContext> dbContextProvider) : base(dbContextProvider)
         {

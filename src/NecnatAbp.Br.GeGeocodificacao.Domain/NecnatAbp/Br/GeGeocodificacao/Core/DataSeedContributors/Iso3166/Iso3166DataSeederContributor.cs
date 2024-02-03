@@ -10,7 +10,7 @@ using Volo.Abp.DependencyInjection;
 
 namespace NecnatAbp.Br.GeGeocodificacao.DataSeedContributors
 {
-    public partial class Iso3166DataSeederContributor : IDataSeedContributor, ITransientDependency
+    public partial class Iso3166DataSeederContributor : ITransientDependency
     {
         private const bool _force = false;
         private const string _logName = "Pais";

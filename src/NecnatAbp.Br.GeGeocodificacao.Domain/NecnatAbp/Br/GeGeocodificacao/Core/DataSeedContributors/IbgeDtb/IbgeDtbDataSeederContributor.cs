@@ -10,7 +10,7 @@ using Volo.Abp.DependencyInjection;
 
 namespace NecnatAbp.Br.GeGeocodificacao.DataSeedContributors
 {
-    public partial class IbgeDtbDataSeederContributor : IDataSeedContributor, ITransientDependency
+    public partial class IbgeDtbDataSeederContributor : ITransientDependency
     {
         private const int _massaTeste = 1000; // TODO: Apagar
         private const bool _force = false;
